@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Apă de parfum - bărbați</title>
+  <link rel="stylesheet" type="text/css" href="style_femei.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="cos.php"><img src="imagini/cos1.png" alt="Cos" width="52" align="right"></a>
+    <a href="login.php"><img src="imagini/login1.png" alt="Login" width="52" align="right"></a>
+    <a href="register.php"><img src="imagini/register1.png" alt="Register" width="50" align="right"></a>
+    <h1>Apă de parfum - bărbați</h1>
+
+    <br>
+
+    <div class="navbar">
+      <a href="main.html">Despre noi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru femei </button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_femei.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_femei.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_femei.html">Apă de colonie</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru bărbați</button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_barbati.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_barbati.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_barbati.html">Apă de colonie</a>
+        </div>
+      </div>
+      <a href="parfumuri_pentru_casa.html">Parfumuri pentru casă</a>
+    </div>
+
+  </header>
+
+  <script>
+    function adaugaInCos(idProdus, numeProdus, pretProdus, imagineProdus) {
+      window.location.href = `cos.php?idProdus=${parseInt(idProdus)}&numeProdus=${numeProdus}&pretProdus=${pretProdus}&imagineProdus=${imagineProdus}`;
+    }
+  </script>
+
+  <div class="container">
+    <div class="product">
+      <img src="imagini/a_p_11.jpg" alt="Parfum 1">
+      <h2>Karl Lagerfeld Bois d´Ambree - 50ml</h2>
+      <p>Note varf: bergamota, portocala amara, pruna</p>
+      <p>Note inima: nucosara sage, geranium, cedru</p>
+      <p>Note baza: tonka, cihlimbar</p>
+      <p>Grupe de parfumuri: citrice, aromatice, lemnoase</p>
+      <p><b>Preț: 100 RON</b></p>
+      <button onclick="adaugaInCos(15, 'Karl Lagerfeld Bois d Ambree - 50ml', 100, 'imagini/a_p_11.jpg')">Cumpără
+        acum</button>
+    </div>
+    <div class="product">
+      <img src="imagini/a_p_21.jpg" alt="Parfum 2">
+      <h2>Armani Emporio Stronger With You Intensely - 100ml</h2>
+      <p>Note varf: piper roz, ienupar</p>
+      <p>Note inima: lavanda, scortisoara, salvie</p>
+      <p>Note baza: vanilie, tonka, castane glasate</p>
+      <p>Grupe de parfumuri: orientale, picante</p>
+      <p><b>Preț: 443 RON</b></p>
+      <button
+        onclick="adaugaInCos(16, 'Armani Emporio Stronger With You Intensely - 100ml', 443, 'imagini/a_p_21.jpg')">Cumpără
+        acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_p_31.jpg" alt="Parfum 3">
+      <h2>Dolce&Gabbana Light Blue Pour Homme Eau Intense - 100ml</h2>
+      <p>Note varf: mandarina, grapefruit, piper roz</p>
+      <p>Note inima: ienupar, rozmarin, sare de mare</p>
+      <p>Note baza: Amberwood, mosc, lemn de guaiac</p>
+      <p>Grupe de parfumuri: acvatice, lemnoase</p>
+      <p><b>Preț: 302 RON</b></p>
+      <button
+        onclick="adaugaInCos(17, 'Dolce&Gabbana Light Blue Pour Homme Eau Intense - 100ml', 302, 'imagini/a_p_31.jpg')">Cumpără
+        acum</button>
+    </div>
+  </div>
+</body>
+
+</html>

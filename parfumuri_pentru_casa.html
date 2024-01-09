@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Parfumuri pentru casă</title>
+  <link rel="stylesheet" type="text/css" href="style_femei.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <a href="cos.php"><img src="imagini/cos1.png" alt="Cos" width="52" align="right"></a>
+    <a href="login.php"><img src="imagini/login1.png" alt="Login" width="52" align="right"></a>
+    <a href="register.php"><img src="imagini/register1.png" alt="Register" width="50" align="right"></a>
+    <h1>Parfumuri pentru casă</h1>
+
+    <br>
+
+    <div class="navbar">
+      <a href="main.html">Despre noi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru femei </button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_femei.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_femei.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_femei.html">Apă de colonie</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru bărbați</button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_barbati.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_barbati.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_barbati.html">Apă de colonie</a>
+        </div>
+      </div>
+      <a href="parfumuri_pentru_casa.html">Parfumuri pentru casă</a>
+    </div>
+
+
+  </header>
+
+  <script>
+    function adaugaInCos(idProdus, numeProdus, pretProdus, imagineProdus) {
+      window.location.href = `cos.php?idProdus=${parseInt(idProdus)}&numeProdus=${numeProdus}&pretProdus=${pretProdus}&imagineProdus=${imagineProdus}`;
+    }
+  </script>
+
+  <div class="container">
+    <div class="product">
+      <img src="imagini/c_1.jpg" alt="Parfum 1">
+      <h2>Ashleigh & Burwood London Fragrance Oil Christmas Spice - 12ml</h2>
+      <p>ulei aromatic</p>
+      <p>Compoziție: portocala, scortisoara, vanilie, condimente, cuisoare verzi, rasini de brad</p>
+      <p>Categoria parfumurilor de interior: lemnoase, dulci, gurmande, picante</p>
+      <p><b>Preț: 33 RON</b></p>
+      <button
+        onclick="adaugaInCos(24, 'Ashleigh & Burwood London Fragrance Oil Christmas Spice - 12ml', 33, 'imagini/c_1.jpg')">Cumpără
+        acum</button>
+    </div>
+    <div class="product">
+      <img src="imagini/c_2.jpg" alt="Parfum 2">
+      <h2>Woodwick Island Coconut - 609.5g</h2>
+      <p>lumânare parfumată cu fitil din lemn</p>
+      <p>Compozitie: ananas, cocos, piña colada</p>
+      <p>Categoria parfumurilor de interior: dulci</p>
+      <p>Tipuri de fitil: de lemn</p>
+      <p>Tipuri de ceara: altele</p>
+      <p>Număr de fitiluri: 1</p>
+      <p>Material: sticlă</p>
+      <p><b>Preț: 138 RON</b></p>
+      <button onclick="adaugaInCos(25, 'Woodwick Island Coconut - 609.5g', 138, 'imagini/c_2.jpg')">Cumpără
+        acum</button>
+
+    </div>
+
+    <div class="product">
+      <img src="imagini/c_3.jpg" alt="Parfum 3">
+      <h2>Yankee Candle Snowflake Kisses - 411g</h2>
+      <p>lumânare parfumată</p>
+      <p>Compozitie: tonuri pulverulente, violeta, petale de trandafir, mosc alb</p>
+      <p>Categoria parfuurilor de interior: dulci</p>
+      <p>Tipuri de fitil: din bumbac</p>
+      <p>Număr de fitiluri: 1</p>
+      <p>Tipuri de ceara: altele</p>
+      <p><b>Preț: 87 RON</b></p>
+      <button onclick="adaugaInCos(26, 'Yankee Candle Snowflake Kisses - 411g', 87, 'imagini/c_3.jpg')">Cumpără
+        acum</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Apă de parfum - femei</title>
+  <link rel="stylesheet" type="text/css" href="style_femei.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style_rating.css">
+</head>
+
+<body>
+  <header>
+    <a href="cos.php"><img src="imagini/cos1.png" alt="Cos" width="52" align="right"></a>
+    <a href="login.php"><img src="imagini/login1.png" alt="Login" width="52" align="right"></a>
+    <a href="register.php"><img src="imagini/register1.png" alt="Register" width="50" align="right"></a>
+    <h1>Apă de parfum - femei</h1>
+    <br>
+    <div class="navbar">
+      <a href="main.html">Despre noi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru femei </button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_femei.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_femei.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_femei.html">Apă de colonie</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru bărbați</button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_barbati.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_barbati.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_barbati.html">Apă de colonie</a>
+        </div>
+      </div>
+      <a href="parfumuri_pentru_casa.html">Parfumuri pentru casă</a>
+    </div>
+
+  </header>
+
+  <script>
+    function adaugaInCos(idProdus, numeProdus, pretProdus, imagineProdus) {
+      window.location.href = `cos.php?idProdus=${parseInt(idProdus)}&numeProdus=${numeProdus}&pretProdus=${pretProdus}&imagineProdus=${imagineProdus}`;
+    }
+  </script>
+
+  <div class="container">
+    <div class="product">
+      <img src="imagini/a_p_1.jpg" alt="Parfum 1">
+      <h2>Karl Lagerfeld - Fleur de Pivoine - 100ml</h2>
+      <p>Note varf: mandarina, coacaze rosii, tonuri verzi</p>
+      <p>Note inima: iasomie, bujor, lacramioare</p>
+      <p>Note baza: extract de cedru alb, mosc cremos, cihlimbar</p>
+      <p>Grupe de parfumuri: florale, verzi</p>
+      <p><b>Preț: 111 RON</b></p>
+      <button onclick="adaugaInCos(1, 'Karl Lagerfeld - Fleur de Pivoine - 100ml', 111, 'imagini/a_p_1.jpg')">Cumpără
+        acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_p_2.jpg" alt="Parfum 2">
+      <h2>Armani Emporio Because It's You - 50ml</h2>
+      <p>Note varf: zmeura, extras din portocala amara, lamaie</p>
+      <p>Note inima: trandafir</p>
+      <p>Note baza: vanilie, mosc, Amberwood</p>
+      <p>Grupe de parfumuri: de fructe, florale</p>
+      <p><b>Preț: 267 RON</b></p>
+      <button onclick="adaugaInCos(2, 'Armani Emporio Because It is You - 50ml', 267, 'imagini/a_p_2.jpg')">Cumpără
+        acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_p_3.jpg" alt="Parfum 3">
+      <h2>Armani My Way Floral - 90ml</h2>
+      <p>Note varf: ulei extras din portocale amare, floare de portocal, tangerine verde</p>
+      <p>Note inima: extras din portocala amara, tuberoza</p>
+      <p>Note baza: vanilie Madagascar, mosc alb</p>
+      <p>Grupe de parfumuri: florale</p>
+      <p><b>Preț: 595 RON</b></p>
+      <button onclick="adaugaInCos(3, 'Armani My Way Floral - 90ml', 595, 'imagini/a_p_3.jpg')">Cumpără acum</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="product">
+      <img src="imagini/a_p_4.png" alt="Parfum 4">
+      <h2>Carolina Herrera Very Good Girl Glam - 80ml</h2>
+      <p>Note varf: cires, migdale amare</p>
+      <p>Note inima: trandafir, crin</p>
+      <p>Note baza: vetiver, vanilie Bourbon, absolut de vanilie</p>
+      <p>Grupe de parfumuri: florale, lemnoase</p>
+      <p><b>Preț: 539 RON</b></p>
+      <button onclick="adaugaInCos(4, 'Carolina Herrera Very Good Girl Glam - 80ml', 539, 'imagini/a_p_4.png')">Cumpără
+        acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_p_5.png" alt="Parfum 5">
+      <h2>Jeanne Arthes Love Generation Sexy - 60ml</h2>
+      <p>Note varf: mandarina, lamaie</p>
+      <p>Note inima: iasomie, măr în caramel, ruj, nectarine, patchouli</p>
+      <p>Note baza: zmeura, lemn de santal, vanilie, mosc</p>
+      <p>Grupe de parfumuri: de fructe, florale</p>
+      <p><b>Preț: 28 RON</b></p>
+      <button onclick="adaugaInCos(5, 'Jeanne Arthes Love Generation Sexy - 60ml', 28, 'imagini/a_p_5.png')">Cumpără
+        acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_p_6.jpg" alt="Parfum 6">
+      <h2>Oriflame Possess - 50ml</h2>
+      <p>Note varf: ananas, frezie, grapefruit</p>
+      <p>Note inima: Ylang-Ylang, flori de portocal, zmeura</p>
+      <p>Note baza: patchouli, lemn de santal, vanilie</p>
+      <p>Grupe de parfumuri: florale, chypre</p>
+      <p><b>Preț: 114 RON</b></p>
+      <button onclick="adaugaInCos(6, 'Oriflame Possess - 50ml', 114, 'imagini/a_p_6.jpg')">Cumpără acum</button>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Apă de toaletă - bărbați</title>
+  <link rel="stylesheet" type="text/css" href="style_femei.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+
+    <a href="cos.php"><img src="imagini/cos1.png" alt="Cos" width="52" align="right"></a>
+    <a href="login.php"><img src="imagini/login1.png" alt="Login" width="52" align="right"></a>
+    <a href="register.php"><img src="imagini/register1.png" alt="Register" width="50" align="right"></a>
+    <h1>Apă de toaletă - bărbați</h1>
+
+    <br>
+
+    <div class="navbar">
+      <a href="main.html">Despre noi</a>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru femei </button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_femei.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_femei.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_femei.html">Apă de colonie</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Parfumuri pentru bărbați</button>
+        <div class="dropdown-content">
+          <a href="apa_de_parfum_barbati.html">Apă de parfum</a>
+          <a href="apa_de_toaleta_barbati.html">Apă de toaletă</a>
+          <a href="apa_de_colonie_barbati.html">Apă de colonie</a>
+        </div>
+      </div>
+      <a href="parfumuri_pentru_casa.html">Parfumuri pentru casă</a>
+    </div>
+
+  </header>
+
+  <script>
+    function adaugaInCos(idProdus, numeProdus, pretProdus, imagineProdus) {
+      window.location.href = `cos.php?idProdus=${parseInt(idProdus)}&numeProdus=${numeProdus}&pretProdus=${pretProdus}&imagineProdus=${imagineProdus}`;
+    }
+  </script>
+
+  <div class="container">
+    <div class="product">
+      <img src="imagini/a_t_11.jpg" alt="Parfum 1">
+      <h2>Valentino Born In Roma Coral Fantasy Uomo - 50ml</h2>
+      <p>Note varf: mar rosu, bergamota</p>
+      <p>Note inima: salvie, geranium, absolut de vanilie</p>
+      <p>Note baza: frunze de tutun, patchouli, absolut de vanilie</p>
+      <p>Grupe de parfumuri: de fructe</p>
+      <p><b>Preț: 422 RON</b></p>
+      <button
+        onclick="adaugaInCos(18, 'Valentino Born In Roma Coral Fantasy Uomo - 50ml', 422, 'imagini/a_t_11.jpg')">Cumpără
+        acum</button>
+    </div>
+    <div class="product">
+      <img src="imagini/a_t_21.jpg" alt="Parfum 2">
+      <h2>Guess 1981 Indigo - 100ml</h2>
+      <p>Note varf: bergamota, salvie, lavanda, smochin</p>
+      <p>Note inima: apa de cocos, iris, tonka, mușchi de stejar</p>
+      <p>Note baza: cihlimbar, mosc, cedru</p>
+      <p>Grupe de parfumuri: aromatice, lemnoase</p>
+      <p><b>Preț: 86 RON</b></p>
+      <button onclick="adaugaInCos(19, 'Guess 1981 Indigo - 100ml', 86, 'imagini/a_t_21.jpg')">Cumpără acum</button>
+    </div>
+
+    <div class="product">
+      <img src="imagini/a_t_31.jpg" alt="Parfum 3">
+      <h2>Dolce&Gabbana Pour Homme - 125ml</h2>
+      <p>Note varf: bergamota, mandarina, extras din portocala amara</p>
+      <p>Note inima: lavanda, piper, salvie</p>
+      <p>Note baza: cedru, tabac, tonka</p>
+      <p>Grupe de parfumuri: aromatice</p>
+      <p><b>Preț: 336 RON</b></p>
+      <button onclick="adaugaInCos(20, 'Dolce Gabbana Pour Homme - 125ml', 336, 'imagini/a_t_31.jpg')">Cumpără
+        acum</button>
+    </div>
+  </div>
+</body>
+
+</html>
